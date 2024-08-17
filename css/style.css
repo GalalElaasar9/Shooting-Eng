@@ -1445,17 +1445,36 @@ swiper-slide img {
     }
   }
 }
+@media (max-width:376px) {
+  .our_journey{
+    .content{
+      .info{
+        .desc{
+          &:first-of-type{
+            p{
+              font-size: 13px !important;
+            }
+          }
+          p{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width:767px) {
   .our_journey{
-    margin-top: 230px;
-    background: #f5f5f5;
+    margin-top: 270px;
+    background: #f5f5f5 !important;
     width: 100%;
     .heading{
-      width: 150px;
+      width: fit-content;
       text-align: right;
       position: absolute;
-      top: -40% !important;
-      right: 4.5% !important;
+      top: -38% !important;
+      left: 50% !important;
+      transform: translateX(-50%);
       h3{
         margin: 0;
         font-size: 45px;
@@ -1465,21 +1484,22 @@ swiper-slide img {
         height: 3.5px;
         background-color: #ec3237;
         opacity: 1;
-        width: 150px !important;
+        width: 147px !important;
       }
     }
     .content{
       justify-content: space-between;
+      flex-direction: column-reverse;
       .image{
         flex: 0 0 100% !important;
         transform: scale(1) !important;
-        img{
-          height: auto;
-        }
+        top: -50px;
       }
       .info{
         flex: 0 0 100% !important;
         margin-top: 30px;
+        text-align: center;
+        top: -85px !important;
         .desc{
           &:first-of-type{
             p{
@@ -1500,14 +1520,14 @@ swiper-slide img {
 @media (max-width:991px) {
   .our_journey{
     margin-top: 230px;
-    background: #f5f5f5;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), #000);
     width: 100%;
     .heading{
-      width: 150px;
+      width: fit-content;
       text-align: right;
       position: absolute;
       top: -65%;
-      right: 3.5%;
+      right: 6.5%;
       h3{
         margin: 0;
         font-size: 45px;
@@ -1686,7 +1706,7 @@ swiper-slide img {
     }
   }
 }
-@media (min-width:371px) and (max-width:767) {
+@media (min-width:371px) and (max-width:767px) {
   .partners{
     padding: 50px 0 0;
     overflow: hidden;

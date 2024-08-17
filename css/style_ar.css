@@ -1713,7 +1713,7 @@ swiper-slide img {
     }
   }
 }
-@media (min-width:371px) and (max-width:767) {
+@media (min-width:371px) and (max-width:767px) {
   .partners{
     padding: 50px 0 0;
     overflow: hidden;
