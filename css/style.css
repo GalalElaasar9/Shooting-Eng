@@ -1404,7 +1404,6 @@ swiper-slide img {
       height: 3.5px;
       background-color: #ec3237;
       opacity: 1;
-      width: 185px;
     }
   }
   .content{
@@ -1415,7 +1414,7 @@ swiper-slide img {
       top: -120px;
       img{
         width: 100%;
-        height: 379px;
+        height: 259px;
         object-fit: cover;
       }
     }
@@ -1465,7 +1464,7 @@ swiper-slide img {
     width: 100%;
     .heading{
       width: fit-content;
-      text-align: right;
+      text-align: center;
       position: absolute;
       top: -38%;
       left: 50%;
