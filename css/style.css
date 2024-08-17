@@ -1555,6 +1555,7 @@ swiper-slide img {
   padding: 50px 0 0;
   .container{
     .heading{
+      width: fit-content;
       h3{
         font-weight: 600;
         font-size: 55px;
@@ -1563,7 +1564,6 @@ swiper-slide img {
         height: 3.5px;
         background-color: #ec3237;
         opacity: 1;
-        width: 360px;
         margin: 20px auto 40px;
       }
     }
@@ -1633,13 +1633,13 @@ swiper-slide img {
 }
 @media (min-width:360px) {
   .partners{
-    width: fit-content;
     margin: auto;
     direction: ltr;
     padding: 50px 0 0;
     overflow: hidden;
     .container{
       .heading{
+        width: fit-content;
         h3{
           font-size: 45px;
         }
