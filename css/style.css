@@ -2077,7 +2077,7 @@ footer{
       width: 100%;
       padding-top: 70px;
       position: relative;
-      margin-left: 6%;
+      margin-left: 6.5%;
       padding-top: 120px;
       &::before{
         bottom: 4%;
@@ -2086,10 +2086,10 @@ footer{
     p{
       &.text-center{
         max-width: 350px;
-        font-size: 13px !important;
-        padding-right: 0;
-        margin-left: 15px;
-        margin-top: 15px;
+        padding-right: 0px;
+        margin-left: 29px;
+        margin-top: 10px;
+        font-size: 13px;
       }
     }
     .boxes{
@@ -2097,24 +2097,33 @@ footer{
       gap: 30px;
       padding-right: 15px;
       margin-top: 20px;
-      align-items: end !important;
+      align-items: end;
       max-width: 410px;
       width: 100%;
-      margin-left: -45px;
+      margin-left: 50px;
       padding-right: 0;
       .box{
         &:nth-child(1){
-          margin: 0 !important;
-          order: 0 !important;
+          margin: 0;
+          order: 0;
           h3{
-            text-align: right !important;
+            text-align: left;
           }
+        }
+        .phone, .email, .location {
+          display: flex;
+          justify-content: start;
+          flex-direction: row;
+          gap: 10px;
+          color: #fff;
         }
         &:nth-child(2){
           order: 1;
+          margin-right: auto;
         }
         &:nth-child(3){
           order: 3;
+          margin-right: auto;
         }
       }
     }
