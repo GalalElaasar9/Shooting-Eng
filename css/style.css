@@ -2037,10 +2037,12 @@ footer{
   }
 }
 
-@media (max-width:767px) {
+@media only screen and (max-width:370px) {
   footer{
+    margin-top: -90px;
+    padding-bottom: 50px;
     overflow: hidden;
-    clip-path: ellipse(100% 82% at 50% 100%);
+    clip-path: ellipse(115% 82% at 50% 100%);
     .container{
       width: 1300px;
       padding: 0;
@@ -2050,15 +2052,18 @@ footer{
       width: 100%;
       padding-top: 70px;
       position: relative;
-      margin: 10px 63px;
-      padding-top: 120px !important;
+      margin-left: 4%;
+      padding-top: 120px;
+      &::before{
+        bottom: 4%;
+      }
     }
     p{
       &.text-center{
         max-width: 350px;
         font-size: 13px !important;
-        padding-right: 21px;
-        line-height: 2.5;
+        padding-right: 0;
+        margin-left:0px;
       }
     }
     .boxes{
@@ -2066,15 +2071,14 @@ footer{
       gap: 30px;
       padding-right: 15px;
       margin-top: 20px;
-      align-items: normal !important;
-      max-width: 350px;
+      align-items: end !important;
+      max-width: 410px;
       width: 100%;
+      margin-left: -61px;
       .box{
         &:nth-child(1){
-          &.small{
-            margin-right: 10px;
-          }
-          order: 1 !important;
+          margin: 0 !important;
+          order: 0 !important;
           h3{
             text-align: right !important;
           }
@@ -2082,19 +2086,91 @@ footer{
         &:nth-child(2){
           order: 1;
         }
+        &:nth-child(3){
+          order: 3;
+        }
       }
     }
   }
 }
-
-@media (max-width:991px) {
+@media (min-width:371px) and (max-width:767px) {
   footer{
+    margin-top: -90px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    clip-path: ellipse(115% 82% at 50% 100%);
     .container{
       width: 1300px;
       padding: 0;
     }
     .image{
+      max-width: 250px;
+      width: 100%;
+      padding-top: 70px;
+      position: relative;
+      margin-left: 6%;
+      padding-top: 120px;
+      &::before{
+        bottom: 4%;
+      }
+    }
+    p{
+      &.text-center{
+        max-width: 350px;
+        font-size: 13px !important;
+        padding-right: 0;
+        margin-left: 15px;
+        margin-top: 15px;
+      }
+    }
+    .boxes{
+      flex-direction: column;
+      gap: 30px;
+      padding-right: 15px;
+      margin-top: 20px;
+      align-items: end !important;
+      max-width: 410px;
+      width: 100%;
+      margin-left: -45px;
+      padding-right: 0;
+      .box{
+        &:nth-child(1){
+          margin: 0 !important;
+          order: 0 !important;
+          h3{
+            text-align: right !important;
+          }
+        }
+        &:nth-child(2){
+          order: 1;
+        }
+        &:nth-child(3){
+          order: 3;
+        }
+      }
+    }
+  }
+}
+@media (min-width:767px) and (max-width:990px) {
+  footer{
+    padding-bottom: 50px;
+    overflow: hidden;
+    clip-path: ellipse(115% 82% at 50% 100%);
+    .container{
+      width: 1300px;
+      padding: 0;
+    }
+    .image{
+      max-width: 250px;
+      width: 100%;
+      padding-top: 70px;
+      position: relative;
+      margin-left: 32.5%;
       padding-top: 100px;
+      margin-bottom: 20px;
+      &::before{
+        bottom: 4%;
+      }
     }
     p{
       &.text-center{
@@ -2106,10 +2182,14 @@ footer{
       }
     }
     .boxes{
+      gap: 30px;
+      padding-right: 15px;
+      margin-top: 20px;
+      align-items: end !important;
       .box{
-        margin: auto;
         &:nth-child(1){
           order: 3;
+          margin: auto;
           margin-top: 40px;
         }
         &:nth-child(3){
@@ -2118,6 +2198,54 @@ footer{
       }
     }
   }
+}
+
+@media (min-width:991px) and (max-width:1024px) {
+  footer{
+    padding-bottom: 50px;
+    overflow: hidden;
+    clip-path: ellipse(115% 82% at 50% 100%);
+    .container{
+      width: 1300px;
+      padding: 0;
+    }
+    .image{
+      max-width: 250px;
+      width: 100%;
+      padding-top: 70px;
+      position: relative;
+      margin-left: 32.5%;
+      padding-top: 100px;
+      margin-bottom: 20px;
+      &::before{
+        bottom: 4%;
+      }
+    }
+    p{
+      &.text-center{
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 550;
+      }
+    }
+    .boxes{
+      gap: 30px;
+      padding-right: 15px;
+      margin-top: 20px;
+      align-items: end !important;
+      .box{
+        &:nth-child(1){
+          margin: auto;
+        }
+        &:nth-child(3){
+          order: 1;
+        }
+      }
+    }
+  }
+  
 }
 /* end footer  */
 
