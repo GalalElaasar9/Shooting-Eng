@@ -692,6 +692,19 @@ swiper-slide img {
     }
   }
 }
+@media (max-width:370px) {
+  .start{
+    .text{
+      h3{
+        font-size: 11px;
+        line-height: 1.4;
+        strong{
+          font-size: 18.5px;
+        }
+      }
+    }
+  }
+}
 @media (max-width:767px) {
   .start{
     .text{
@@ -1415,8 +1428,37 @@ swiper-slide img {
 }
 @media (max-width:370px) {
   .our_journey{
+    .heading{
+      width: fit-content;
+      text-align: center;
+      position: absolute;
+      top: -31%;
+      left: 50%;
+      transform: translateX(-50%);
+      h3{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      hr{
+        height: 3.5px;
+        background-color: #ec3237;
+        opacity: 1;
+      }
+    }
     .content{
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      .image{
+        flex: 0 0 100%;
+        transform: scale(1);
+        top: -50px;
+      }
       .info{
+        flex: 0 0 100%;
+        margin-top: 30px;
+        text-align: center;
+        top: -85px;
         .desc{
           p{
             font-size: 13px;
@@ -2030,9 +2072,10 @@ footer{
     p{
       &.text-center{
         max-width: 350px;
-        font-size: 13px !important;
-        padding-right: 0;
-        margin-left:0px;
+        padding-right: 0px;
+        margin-left: 29px;
+        margin-top: 10px;
+        font-size: 13px;
       }
     }
     .boxes{
@@ -2046,17 +2089,26 @@ footer{
       margin-left: -61px;
       .box{
         &:nth-child(1){
-          margin: 0 !important;
-          order: 0 !important;
+          margin: 0;
+          order: 0;
           h3{
-            text-align: right !important;
+            text-align: left;
           }
+        }
+        .phone, .email, .location {
+          display: flex;
+          justify-content: start;
+          flex-direction: row;
+          gap: 10px;
+          color: #fff;
         }
         &:nth-child(2){
           order: 1;
+          margin-right: auto;
         }
         &:nth-child(3){
           order: 3;
+          margin-right: auto;
         }
       }
     }
