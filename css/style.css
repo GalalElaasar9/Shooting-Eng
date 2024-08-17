@@ -679,13 +679,14 @@ swiper-slide img {
     }
   }
   a{
-    max-width: 250px;
+    max-width: 200px;
     width: 100%;
     background-color: #ec3237;
     border-radius: 25px;
     margin-top: 15px;
     color: #fff;
     padding: 10px;
+    margin-bottom: 20px;
     &:hover{
       color: #fff;
     }
@@ -775,38 +776,6 @@ swiper-slide img {
 
 
 /* start Our Business  */
-
-/* .our_business_2{
-  margin-top: 42px;
-  position: relative;
-  right: 5px;
-  .all{
-    padding: 34px;
-    direction: rtl;
-    .items{
-      li{
-        color: #fff;
-        span{
-          font-size: 19px;
-          &.dash{
-            color: #ec3237;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width:767px) {
-  .our_business_2{
-    margin-top: 37px;
-  }
-}
-@media (max-width:991px) {
-  .our_business_2{
-    margin-top: 37px;
-  }
-} */
-
 .our_business{
   margin-top: 50px;
   .all{
@@ -1020,7 +989,7 @@ swiper-slide img {
     margin-top: 0px;
     .all{
       padding-top: 0;
-      margin-top: 0px;
+      margin-top: -1px;
       padding-bottom: 10px;
       border-radius: 0 0px 71px 71px;
       .items{
@@ -1556,6 +1525,7 @@ swiper-slide img {
   .container{
     .heading{
       width: fit-content;
+      margin: auto;
       h3{
         font-weight: 600;
         font-size: 55px;
@@ -1639,7 +1609,6 @@ swiper-slide img {
     overflow: hidden;
     .container{
       .heading{
-        width: fit-content;
         h3{
           font-size: 45px;
         }
